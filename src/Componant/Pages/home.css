@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .text-section, .form-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .text-section {
+    background-color: #f0f0f0;
+  }
+  
+  .form-section {
+    background-color: #fff;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Query for Tablet and Mobile */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
